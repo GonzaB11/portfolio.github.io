@@ -9,49 +9,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stack">Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <div class="container" style="margin-top: 80px;">
         <section id="about-me" class="about-me">
             <h2>About Me</h2>   
-        </section>
-
-        <section id="technical-skills" class="technical-skills">
-            <h2>Technical Skills</h2>
-        </section>
-
-        <section id="portfolio" class="portfolio">
-            <h2>Projects</h2>
+            <p>I am currently a student pursuing a degree in Computer Science and Systems at Universidad Nacional de General Sarmiento (UNGS). Throughout my studies, I have gained knowledge in software development, databases, algorithms, and more. I love to learn and build something new, productive, innovative and creative. I am always looking for new ways to learn and improve, driven by my enthusiasm for technology and my commitment to continuous development.</p>
         </section>
 
         <section id="stack" class="stack">
             <h2>Stack</h2>   
-            <h5>Languages</h5>
-            <img src="Images/java.png" alt="Java">
-            <img src="Images/piton.png" alt="Python">
-            <img src="Images/html-5.png" alt="HTML">
-            <img src="Images/css-3.png" alt="CSS">
-            <img src="Images/js.png" alt="JavaScript">
-            <img src="Images/c.png" alt="C">
-            <img src="Images/go.png" alt="Go">
-            
-            <h5>Other Tools and Technologies</h5> 
-            <img src="Images/git.png" alt="Git">
-            <img src="Images/github.png" alt="GitHub">
-            <img src="Images/gitlab.png" alt="GitLab">
-            <img src="Images/images.png" alt="SQL">
-            <img src="Images/junit.png" alt="JUnit">
-            <img src="Images/boot.png" alt="Bootstrap">
-            <img src="Images/ink.png" alt="Inkscape">
-            <img src="Images/gimp.png" alt="Gimp">
+        
+            <div class="subsection">
+                <h5>Languages</h5>
+                <img src="Images/java.png" alt="Java">
+                <img src="Images/piton.png" alt="Python">
+                <img src="Images/html-5.png" alt="HTML">
+                <img src="Images/css-3.png" alt="CSS">
+                <img src="Images/js.png" alt="JavaScript">
+                <img src="Images/c.png" alt="C">
+                <img src="Images/go.png" alt="Go">
+            </div>
+        
+            <div class="subsection">
+                <h5>Other Tools and Technologies</h5> 
+                <img src="Images/git.png" alt="Git">
+                <img src="Images/github.png" alt="GitHub">
+                <img src="Images/gitlab.png" alt="GitLab">
+                <img src="Images/images.png" alt="SQL">
+                <img src="Images/junit.png" alt="JUnit">
+                <img src="Images/boot.png" alt="Bootstrap">
+                <img src="Images/ink.png" alt="Inkscape">
+                <img src="Images/gimp.png" alt="Gimp">
+            </div>
+        
+            <div class="subsection">
+                <h5>IDEs</h5>
+                <img src="Images/vs.png" alt="Visual Studio Code">
+                <img src="Images/eclipse.png" alt="Eclipse">
+                <img src="Images/pys.png" alt="Pyscripter">
+            </div>
+        </section>
 
-            <h5>IDEs</h5>
-            <img src="Images/vs.png" alt="Visual Studio Code">
-            <img src="Images/eclipse.png" alt="Eclipse">
-            <img src="Images/pys.png" alt="Pyscripter">
-
+        <section id="proyectos" class="proyectos">
+            <h2>Projects</h2>
         </section>
     
         <section id="education" class="education">
-            <h2>Education</h2>
+            <h2>Education</h2> 
+            <div class="cards-container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Images/ungs.jpg" class="img-fluid rounded-start" alt="UNGS">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Bachelor's Degree in Systems</p>
+                                <p class="card-text">2021 - Now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Images/ungs.jpg" class="img-fluid rounded-start" alt="UNGS">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <p class="card-text">Associate's Degree in Computer Science</p>
+                                <p class="card-text">2021 - Now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <section id="contact" class="contact">
@@ -74,3 +135,4 @@
     <script src="/js.js"></script>
 </body>
 </html>
+
