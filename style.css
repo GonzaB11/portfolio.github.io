@@ -6,6 +6,36 @@ body {
     font-family: "Gentium Plus", serif;
 }
 
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #666, #888, #666);
+    margin: 50px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#particles-js {
+    position: relative;
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-content {
+    text-align: center;
+    position: absolute; 
+    z-index: 1; 
+}
+
+.console-container {
+    font-size: 4em; 
+    margin-bottom: 20px;
+}
+
 .navbar {
     background: linear-gradient(90deg, #1a1a2e, #16213e);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,7 +120,7 @@ body {
     transform: rotate(-45deg);
     top: 0;
   }
-  
+
   .navbar-collapse {
     text-align: center;
   }
@@ -126,7 +156,7 @@ body {
 }
 
 section {
-    margin-bottom: 200px; 
+    margin-bottom: 100px; 
 }
 
 .subsection {
@@ -154,8 +184,24 @@ section {
     left: 10px;
 }
 
+#yo {
+    margin-top: 50px;
+    width: 300px; 
+    height: 300px; 
+    justify-items: center;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#yo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
 .about-me{
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 .about-me, .proyectos, .education, .stack, .contact-icons, .contact {
