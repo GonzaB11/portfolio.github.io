@@ -6,8 +6,127 @@ body {
     font-family: "Gentium Plus", serif;
 }
 
+.navbar {
+    background: linear-gradient(90deg, #1a1a2e, #16213e);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+  }
+
+  .navbar-brand img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #00d4ff !important;
+    transform: scale(1.1);
+  }
+
+  .nav-item:last-child .nav-link {
+    background: #00d4ff;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-item:last-child .nav-link:hover {
+    background: #00b4d8;
+    transform: scale(1.1);
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: transparent;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .navbar-toggler.collapsed .navbar-toggler-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+
+.resume-button {
+    display: inline-block;
+    width: 300px;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: white;
+    font-family: "Gentium Plus", serif;
+    background-color: #0b2541; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); 
+    transition: all 0.3s ease-in-out; 
+}
+
+.resume-button:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.6); 
+    transform: scale(1.1); 
+}
+
+.resume-button:active {
+    transform: scale(1.05); 
+}
+
 section {
-    margin-bottom: 80px; 
+    margin-bottom: 200px; 
 }
 
 .subsection {
@@ -20,70 +139,46 @@ section {
     font-size: 1.5rem; 
 }
 
-.hidden {
-  opacity:0;
-}
-
 .console-container {
-    font-family: Khula;
+    font-family: Khula, sans-serif;
     font-size: 5em; 
     text-align: center;
-    height: auto;
     margin-top: 100px; 
     color: white;
-  }
-
-.console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
 }
 
-.about-me, .proyectos, .education {
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+.about-me{
+    margin-top: 300px;
+}
+
+.about-me, .proyectos, .education, .stack, .contact-icons, .contact {
     text-align: center;
 }
 
-.stack img{
+.stack img, .contact-icons img {
     display: inline-block;
     margin: 10px;
-    width: 100px; 
-    height: auto;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.stack img:hover {
-    transform: scale(1.2); 
-}
-
-.stack{
-    text-align: center;
+.stack img {
+    width: 70px;
 }
 
 .contact-icons img {
-    display: inline-block;
-    margin: 10px;
-    width: 50px; 
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+    width: 50px;
 }
 
-.contact-icons img:hover {
-    transform: scale(1.2); 
-}
-
-.contact-icons, .contact {
-    text-align: center;
-}
-
-.education {
-    text-align: center;
-}
-
-.education h2 {
-    margin-bottom: 20px; 
+.stack img:hover, .contact-icons img:hover {
+    transform: scale(1.2);
 }
 
 .cards-container {
@@ -92,22 +187,107 @@ section {
     justify-content: center;
     align-items: center;
     gap: 20px; 
+    margin-top: 50px;
 }
 
 .cards-container .card {
     width: 380px; 
     background-color: #1a1a2e; 
     color: white; 
-    border: none; 
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.cards-container .card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+}
+
+.contact {
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-icons a img {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.contact-icons a img:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
     .stack img, .contact-icons img {
-        width: 80px; 
+        width: 80px;
     }
-    .education .card {
-        width: 30%; 
+    .cards-container .card {
+        width: 30%;
     }
 }

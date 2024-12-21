@@ -1,4 +1,4 @@
-consoleText(["I'm Gonzalo Benitez"], 'text',['white','skyblue','lightgreen']);
+consoleText(["I'm Gonzalo Benitez"], 'text',['white','skyblue','pink']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
