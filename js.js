@@ -49,3 +49,27 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
+emailjs.init("K2PQsAUrufibPHw0B"); // Asegúrate de reemplazarlo con tu clave pública
+
+document.querySelector('.contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita que la página se recargue
+
+    const form = this;
+    emailjs.sendForm('service_yregq0c', 'template_jjwqd5f', form)
+        .then(() => {
+            // Mostrar animación
+            const animation = document.getElementById('email-sent-animation');
+            animation.classList.remove('hidden');
+            
+            // Ocultar animación después de 3 segundos
+            setTimeout(() => {
+                animation.classList.add('hidden');
+            }, 3000);
+
+            // Limpiar los campos del formulario
+            form.reset();
+        })
+        .catch((error) => {
+            alert('Error al enviar el correo: ' + error.text);
+        });
+});
