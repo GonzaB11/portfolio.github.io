@@ -1,5 +1,5 @@
 function handleSubmit(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     const form = document.getElementById("miFormulario");
     const button = form.querySelector('.submit-button');
 
@@ -7,10 +7,10 @@ function handleSubmit(event) {
     button.classList.add("sent");
 
     setTimeout(() => {
-      form.reset(); 
-      button.textContent = "Send"; 
-      button.classList.remove("sent");
-    }, 2000); 
+        form.reset();
+        button.textContent = "Send";
+        button.classList.remove("sent");
+    }, 2000);
 
     return false;
-  }
+}
