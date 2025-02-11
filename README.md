@@ -1,5 +1,7 @@
 # My Website Project
 
+![pagweb1](https://github.com/user-attachments/assets/e94ef6e3-c54d-4e54-ad89-400aadf681ae)
+
 ## About the Project
 This project is my personal website, which I developed using HTML, CSS, and JavaScript. The website serves as a showcase of my skills, projects, and personal interests.
 
@@ -26,8 +28,6 @@ This project is my personal website, which I developed using HTML, CSS, and Java
    cd portfolio.github.io
    ```
 3. Open `index.html` in your preferred browser.
-
-4. ![pagweb1](https://github.com/user-attachments/assets/e94ef6e3-c54d-4e54-ad89-400aadf681ae)
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
